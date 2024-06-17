@@ -11,7 +11,7 @@ class ViewModel : ObservableObject {
     @Published var meals : [Meal] = []
     
     func fetchMeal() {
-        guard let url = URL(string: "https://www.themealdb.com/api/json/v1/1/search.php?f=r") else {
+        guard let url = URL(string: "https://www.themealdb.com/api/json/v1/1/search.php?f=b") else {
             return
         }
         

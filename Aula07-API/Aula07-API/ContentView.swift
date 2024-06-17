@@ -21,14 +21,8 @@ struct ContentView: View {
                         }
                     }
                     .scrollContentBackground(.hidden)
+                    .background(.lightBlue)
                     .navigationTitle(Text("Meal's list"))
-                    .background(LinearGradient(gradient:
-                                                Gradient(colors: [
-                                                    .indigo,
-                                                    .lightBlue,
-                                                    .white
-                                                ]), startPoint: .top,
-                                               endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
                 }
                 .onAppear() {
                     vm.fetchMeal()
